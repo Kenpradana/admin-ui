@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-Tambahkan ini untuk full content
-html, body, #root {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
+  /* Tambahkan ini untuk full content
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-#root {
-  display: flex;
-  flex-direction: column;
+  #root {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  
+@theme {
+  --font-body: "Inter", sans-serif;
+  --font-poppins: "Montserrat", sans-serif;
 }
