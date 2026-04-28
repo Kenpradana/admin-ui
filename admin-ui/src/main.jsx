@@ -8,6 +8,6 @@ import Exercise from './Exercise.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Exercise    />
+    <App/>
   </React.StrictMode>,
 )
