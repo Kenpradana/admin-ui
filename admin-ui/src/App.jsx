@@ -1,11 +1,11 @@
-import React from 'react';
-import Exercise from './Exercise';
+import "./App.css";
+import SignInPage from "./pages/signin";
 
 function App() {
   return (
-    <div>
-      <Exercise />
-    </div>
+    <>
+      <SignInPage/>
+    </>
   );
 }
 

@@ -67,8 +67,8 @@ button:focus-visible {
   }
 } */
 
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 @theme {
   --color-special-red2: #b83016;
-} 
+}  */
