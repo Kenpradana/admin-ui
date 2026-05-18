@@ -1,57 +1,55 @@
-import React from 'react'
-import LabeledInput from '../Elements/LabeledInput'
-import CheckBox from '../Elements/CheckBox'
-import Logo from '../Elements/Logo'
-import Button from '../Elements/Button'
+import LabeledInput from '../Elements/LabeledInput';
+import Button from '../Elements/Button';
 
-function FormSignIn() {
+
+const FormSignUp = ({ onSubmit }) => {
   return (
-    <>
-    {/* form start */}
-        <div className="mt-16">
-          <form action="">
-            <div className="mb-6">
-              <LabeledInput
-                label="Email Address"
-                id="email"
-                type="email"
-                placeholder="hello@example.com"
-                name="email"
-              />
-            </div>
-            <div className="mb-6">
-              <LabeledInput
-                label="Password"
-                id="password"
-                type="password"
-                placeholder="••••••••"
-                name="password"
-              />
-            </div>
-            <div className="mb-3">
-            <CheckBox
-              label="Keep me signed in"
-              id="status"
-              type="checkbox"
-              name="remember"
-            />
-            </div>
-            <Button>Login</Button>
-          </form>
-        </div>
-        {/* form end */}
-       {/* divider start */}
-        <div className="flex items-center my-6">
-          <div className="flex-1 h-px bg-gray-200"></div>
-          <span className="px-4 text-xs text-gray-400 whitespace-nowrap">
-            or sign in with
-          </span>
-          <div className="flex-1 h-px bg-gray-200"></div>
-        </div>
-        {/* divider end */}
-        {/* sign in with google start */}
-        <div className="mb-8">
-           <Button type="button" variant="secondary">
+    <form onSubmit={onSubmit}>
+      {/* 1. Ubah Judul */}
+      <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
+        Create an Account
+      </h2>
+
+      <div className="space-y-5">
+        {/* 2. Sesuaikan Label */}
+        <LabeledInput 
+          label="Name" 
+          type="text" 
+          name="name" 
+          placeholder="John Doe" 
+        />
+
+        <LabeledInput 
+          label="Email Address" 
+          type="email" 
+          name="email" 
+          placeholder="johndoe@example.com" 
+        />
+
+        <LabeledInput 
+          label="Password" 
+          type="password" 
+          name="password" 
+          placeholder="••••••••" 
+        />
+      </div>
+
+      {/* 3. Tombol Hijau */}
+      <button 
+        type="submit" 
+        className="w-full mt-6 bg-[#299d91] hover:bg-[#258b7f] text-white font-semibold py-2.5 rounded-lg transition duration-200"
+      >
+        Sign Up
+      </button>
+
+      {/* 4. Garis Pembatas dan Tombol Google */}
+      <div className="flex items-center my-5">
+        <div className="flex-1 h-px bg-gray-300"></div>
+        <span className="px-3 text-gray-400 text-sm">or</span>
+        <div className="flex-1 h-px bg-gray-300"></div>
+      </div>
+
+      <Button type="button" variant="secondary">
             <span className="flex items-center justify-center">
                     <svg
                     className="h-6 w-6 mr-2"
@@ -80,20 +78,16 @@ function FormSignIn() {
                     Continue with Google
             </span>
            </Button>
-        </div>
-        {/* sign in with google end */}
-        {/* link start */}
-        <div className="flex justify-center mt-6">
-          <a
-            href="/register"
-            className="text-[#299d91] text-sm font-bold hover:underline cursor-pointer"
-          >
-            Create an account
-          </a>
-        </div>
-        {/* link end */}
-    </>
-  )
-}
 
-export default FormSignIn
+      {/* 5. Ubah Teks Bawah */}
+      <p className="text-sm text-center text-gray-600 mt-6">
+        Already have an account?{' '}
+        <a href="/login" className="text-[#299d91] font-semibold hover:underline">
+          Sign In Here
+        </a>
+      </p>
+    </form>
+  );
+};
+
+export default FormSignUp;
