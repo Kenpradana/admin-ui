@@ -1,13 +1,25 @@
 import "./App.css";
 import SignInPage from "./pages/signIn";
 import SignUpPage from "./pages/signUp";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ErrorPage from "./pages/error";
+import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
 
 function App() {
   const myRouter = createBrowserRouter([
     {
       path: "/",
-      element: <div>Halaman Utama</div>,
+      element: (
+        	<div className="flex justify-center items-center min-h-screen">
+          <Link to="/login" className="p-2 m-5 bg-[#299d91]  text-white">
+            Login
+          </Link>
+          |
+          <Link to="/register" className="p-2 m-5 bg-[#299d91]  text-white">
+            Register
+          </Link>
+        </div>
+      ),
+      errorElement: <ErrorPage />,
     },
 
     {

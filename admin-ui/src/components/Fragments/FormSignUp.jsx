@@ -1,12 +1,15 @@
+import React from 'react'
 import LabeledInput from '../Elements/LabeledInput';
 import Button from '../Elements/Button';
-
+import CheckBox from '../Elements/CheckBox'
+import Logo from '../Elements/Logo'
+import { Link } from "react-router-dom";
 
 const FormSignUp = ({ onSubmit }) => {
   return (
     <form onSubmit={onSubmit}>
       {/* 1. Ubah Judul */}
-      <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
+      <h2 className="text-xl font-bold text-gray-800 mb-8 text-center">
         Create an Account
       </h2>
 
@@ -82,9 +85,9 @@ const FormSignUp = ({ onSubmit }) => {
       {/* 5. Ubah Teks Bawah */}
       <p className="text-sm text-center text-gray-600 mt-6">
         Already have an account?{' '}
-        <a href="/login" className="text-[#299d91] font-semibold hover:underline">
+        <Link to="/login" className="text-[#299d91] font-semibold hover:underline">
           Sign In Here
-        </a>
+        </Link>
       </p>
     </form>
   );
