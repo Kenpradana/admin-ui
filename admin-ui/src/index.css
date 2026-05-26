@@ -1,3 +1,4 @@
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -66,9 +67,20 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+/* 1. Import font Poppins dari Google Fonts (Taruh paling atas) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* @import "tailwindcss";
+/* 2. Import Tailwind v4 */
+@import "tailwindcss";
 
 @theme {
   --color-special-red2: #b83016;
-}  */
+  --color-special-bg3: #111318;
+  --color-special-bg2: #0F1115;
+    --font-poppins: 'Poppins', sans-serif;
+}  
+
+body {
+  font-family: 'Poppins', sans-serif;
+} 
+
