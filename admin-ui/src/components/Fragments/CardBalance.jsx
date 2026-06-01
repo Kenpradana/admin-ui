@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Elements/Card";
 import DotsMobileStepper from "../Elements/DotsMobileStepper";
 import { Link } from "react-router-dom";
-import icon from "../Elements/Icon";
+import Icon from "../Elements/Icon";
 
 function CardBalance(props) {
   const { data } = props;
@@ -37,7 +37,7 @@ function CardBalance(props) {
 	                      ${item.balance}
 	                    </span>
 	                    <div className="bg-white text-primary rounded-full">
-	                      <icon.ArrowUpRight width={18} height={18} />
+	                      <Icon.ArrowUpRight width={18} height={18} />
 	                    </div>
 	                  </div>
 	                </div>

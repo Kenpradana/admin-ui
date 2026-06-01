@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Elements/Card";
-import icon from "../Elements/Icon";
+import Icon from "../Elements/Icon";
 import CompositionExample from "../Elements/CompositionExample";    
 
 function CardGoal(props) {
@@ -19,7 +19,7 @@ function CardGoal(props) {
 	                ${data.targetAmount}
 	              </span>
 	              <div className="p-2 bg-gray-05 text-gray-01 rounded-md box-border">
-	                <icon.Edit size={16} />
+	                <Icon.Edit size={16} />
 	              </div>
 	            </div>
 	            <div>Nov, 2023</div>
@@ -28,7 +28,7 @@ function CardGoal(props) {
 	          <div className="flex justify-between">
 	            <div>
 	              <div className="flex mt-3 mb-10 text-gray-01">
-	                <icon.Award />
+	                <Icon.Award />
 	                <div className="ms-2">
 	                  <div>Target Achieved</div>
 	                  <div className="font-bold text-xl text-black">
@@ -37,7 +37,7 @@ function CardGoal(props) {
 	                </div>
 	              </div>
 	              <div className="flex text-gray-01">
-	                <icon.Target />
+	                <Icon.Target />
 	                <div className="ms-2">
 	                  <div>This Month Target</div>
 	                  <div className="font-bold text-xl text-black">
