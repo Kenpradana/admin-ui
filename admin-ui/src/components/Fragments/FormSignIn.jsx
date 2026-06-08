@@ -85,7 +85,7 @@ function FormSignIn() {
         {/* sign in with google end */}
         {/* link start */}
         <div className="flex justify-center mt-6">
-        <Link to="/register" className="text-[#299d91] font-semibold hover:underline">
+        <Link to="/register" className="text-primary font-semibold hover:underline">
           Create an account
         </Link>
         </div>

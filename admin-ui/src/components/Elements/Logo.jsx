@@ -4,8 +4,8 @@ function Logo(props) {
   const { variant = "primary" } = props;
 
   const variantClasses = {
-    primary: "text-[#299d91] text-4xl",
-    secondary: "text-[#299d91] text-sm sm:text-2xl",
+    primary: "text-primary text-4xl",
+    secondary: "text-primary text-sm sm:text-2xl",
   };
 
   return (

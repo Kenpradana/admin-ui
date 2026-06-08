@@ -5,7 +5,7 @@ function Button(props) {
   
   const baseClasses = "h-12 rounded-md text-sm w-full"
   const variantClasses = {
-    primary: "bg-[#299d91] text-white hover:bg-[#238a7f]",
+    primary: "bg-primary text-white hover:bg-[#238a7f]",
     secondary: "bg-[#f0f0f0] text-gray-700 hover:bg-[#e0e0e0]"
   };
 
